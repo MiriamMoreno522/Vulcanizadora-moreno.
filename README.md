@@ -1,0 +1,1 @@
+Vulcanizadora dedicada a la reparación y mantenimiento de llantas para autos, motos y camionetas. Brindamos parchado, vulcanizado en caliente y frío, revisión de presión y venta de neumáticos. Ofrecemos servicio rápido, precios accesibles y atención confiable para la seguridad y buen rendimiento de tu vehículo. Calidad garantizada todos los días.
