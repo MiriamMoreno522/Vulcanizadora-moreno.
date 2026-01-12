@@ -3,69 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Consulta nuestros servicios</title>
+  <title>Vulcanizadora Moreno</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Configuración de colores -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            principal: '#b30000',   /* rojo */
+            oscuro: '#000000',      /* negro */
+            claro: '#ffffff'        /* blanco */
+          }
+        }
+      }
+    }
+  </script>
 </head>
+
 <body class="bg-white text-gray-800">
+
   <!-- HERO -->
-  <section class="relative bg-gray-900 text-white">
+  <section class="relative bg-oscuro text-white">
     <img 
-      src="https://image2url.com/r2/default/images/1768187590413-ceb16ccb-9a5f-48aa-80f4-71f91ceeddb6.png" 
-      class="absolute inset-0 w-full h-full object-cover opacity-60">
-    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center bg-black bg-opacity-50">
-      <h1 class="text-4xl md:text-6xl font-bold mb-4">Consulta la información de cada uno de nuestros servicios</h1>
-      <p class="text-lg md:text-2xl mb-8 max-w-2xl">Todo lo que necesitas al alcance de un clic con Vulcanizadora Moreno.</p>
-      <a href="#contacto" class="inline-block px-8 py-4 bg-green-500 text-white font-semibold rounded-full hover:bg-green-600 transition">Comienza ahora</a>
+      src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9"
+      class="absolute inset-0 w-full h-full object-cover opacity-40">
+
+    <div class="relative z-10 flex flex-col items-center justify-center min-h-screen px-6 text-center bg-oscuro bg-opacity-80">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
+        Vulcanizadora Moreno
+      </h1>
+      <p class="text-lg md:text-2xl mb-10 max-w-2xl text-gray-200">
+        Servicio profesional de vulcanización y reparación de llantas,
+        con calidad, seguridad y confianza.
+      </p>
+      <a href="#contacto"
+         class="px-10 py-4 bg-principal text-white font-semibold rounded-full hover:bg-red-700 transition">
+        Contáctanos
+      </a>
     </div>
   </section>
 
   <!-- SOBRE NOSOTROS -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <div class="grid md:grid-cols-2 gap-8 items-center">
+  <section class="py-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <h2 class="text-3xl font-bold mb-4">¿Por qué es importante?</h2>
-        <p class="mb-4">En Vulcanizadora Moreno te ayudamos a tomar decisiones informadas sobre lo que le haces a tu vehiculo. Consulta fácilmente la información de todos nuestros servicios y adapta tus elecciones a tu estilo de vida.</p>
-        <p>Accede a esta información en segundos, desde cualquier dispositivo.</p>
+        <h2 class="text-3xl font-bold mb-4 text-principal">
+          Nuestro compromiso
+        </h2>
+        <p class="mb-4">
+          En <strong>Vulcanizadora Moreno</strong> ofrecemos atención rápida
+          y profesional, cuidando la seguridad de tu vehículo.
+        </p>
+        <p>
+          Cada servicio se realiza con responsabilidad y experiencia.
+        </p>
       </div>
       <div>
-        <img src="https://image2url.com/r2/default/images/1768183104251-d809b815-28e4-45ae-ade5-5c0704ca0ec3.png" alt="Información Vulcanizadora Moreno" class="rounded-lg shadow-lg w-full"/>
+        <img 
+          src="https://images.unsplash.com/photo-1617886322168-72c7b2d9b3f5"
+          alt="Servicio de vulcanización"
+          class="rounded-xl shadow-lg w-full">
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section class="py-20 px-6 bg-gray-100">
+    <div class="max-w-5xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold text-principal mb-4">
+        Nuestros Servicios
+      </h2>
+      <p class="text-gray-600">
+        Soluciones completas para tus llantas
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 border rounded-xl text-center bg-white hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2 text-oscuro">Vulcanización</h3>
+        <p>Reparaciones resistentes y duraderas.</p>
+      </div>
+      <div class="p-6 border rounded-xl text-center bg-white hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2 text-oscuro">Cambio de llantas</h3>
+        <p>Instalación rápida y segura.</p>
+      </div>
+      <div class="p-6 border rounded-xl text-center bg-white hover:shadow-lg transition">
+        <h3 class="font-bold text-xl mb-2 text-oscuro">Revisión de presión</h3>
+        <p>Para un manejo más seguro.</p>
       </div>
     </div>
   </section>
 
   <!-- FORMULARIO DE CONTACTO -->
-  <section id="contacto" class="bg-gray-100 py-16 px-6">
+  <section id="contacto" class="bg-oscuro py-20 px-6 text-white">
     <div class="max-w-3xl mx-auto text-center mb-12">
-      <h2 class="text-3xl font-bold mb-4">Contáctanos</h2>
-      <p>Si tienes dudas o quieres más información, déjanos tus datos y nos pondremos en contacto contigo.</p>
+      <h2 class="text-3xl font-bold mb-4 text-white">Contáctanos</h2>
+      <p class="text-gray-300">
+        Déjanos tus datos y nos pondremos en contacto contigo.
+      </p>
     </div>
-    <form action="YOUR_FORM_ENDPOINT" method="POST" class="max-w-3xl mx-auto bg-white p-8 rounded-lg shadow-lg space-y-6">
+
+    <form class="max-w-3xl mx-auto bg-white text-gray-800 p-8 rounded-xl shadow-lg space-y-6">
       <div class="grid md:grid-cols-2 gap-6">
         <div>
-          <label for="name" class="block mb-2 font-semibold">Nombre</label>
-          <input type="text" id="name" name="name" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-green-500"/>
+          <label class="block mb-2 font-semibold">Nombre</label>
+          <input type="text" required
+            class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-principal">
         </div>
         <div>
-          <label for="email" class="block mb-2 font-semibold">Correo electrónico</label>
-          <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-green-500"/>
+          <label class="block mb-2 font-semibold">Correo electrónico</label>
+          <input type="email" required
+            class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-principal">
         </div>
       </div>
+
       <div>
-        <label for="phone" class="block mb-2 font-semibold">Teléfono</label>
-        <input type="tel" id="phone" name="phone" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-green-500"/>
+        <label class="block mb-2 font-semibold">Teléfono</label>
+        <input type="tel" required
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-principal">
       </div>
+
       <div>
-        <label for="message" class="block mb-2 font-semibold">Mensaje</label>
-        <textarea id="message" name="message" rows="4" required class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-green-500"></textarea>
+        <label class="block mb-2 font-semibold">Mensaje</label>
+        <textarea rows="4" required
+          class="w-full border border-gray-300 rounded px-4 py-2 focus:outline-none focus:border-principal"></textarea>
       </div>
-      <button type="submit" class="w-full bg-green-500 text-white font-semibold px-6 py-3 rounded hover:bg-green-600 transition">Enviar</button>
+
+      <button type="submit"
+        class="w-full bg-principal text-white font-semibold px-6 py-3 rounded-full hover:bg-red-700 transition">
+        Enviar mensaje
+      </button>
     </form>
-    <p class="text-center mt-6 text-gray-600">O escríbenos directamente: <a href="mailto:jjmemito@hotmail.com" class="text-green-600 font-semibold">jjmemito@hotmail.com</a></p>
+
+    <p class="text-center mt-6 text-gray-300">
+      Escríbenos directamente:
+      <a href="mailto:jjmemito@hotmail.com" class="text-white font-semibold underline">
+        jjmemito@hotmail.com
+      </a>
+    </p>
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-gray-900 text-white py-6 text-center">
+  <footer class="bg-oscuro text-white py-6 text-center">
     <p>&copy; 2026 Vulcanizadora Moreno. Todos los derechos reservados.</p>
   </footer>
+
 </body>
 </html>
